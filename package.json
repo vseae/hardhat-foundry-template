@@ -80,7 +80,8 @@
   },
   "unusedDevDependencies": {
     "sol-merger": "^4.4.0",
-    "@openzeppelin/hardhat-upgrades": "^2.0.1"
+    "@openzeppelin/hardhat-upgrades": "^2.0.1",
+    "snarkjs": "^0.7.3"
   },
   "unusedDependencies": {
     "@openzeppelin/merkle-tree": "^1.0.5"
