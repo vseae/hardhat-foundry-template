@@ -1,0 +1,9 @@
+{
+  "name": "hardhat-foundry-template",
+  "version": "1.0.0",
+  "description": "use foundry for testing and integrate with Hardhat.",
+  "main": "index.js",
+  "repository": "https://github.com/vseae/hardhat-foundry-template.git",
+  "author": "vseae",
+  "license": "MIT"
+}
