@@ -16,7 +16,7 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
       proxyContract: "OpenZeppelinTransparentProxy",
     },
   });
-  
+
   const demo = await ethers.getContractAt(DemoArtifact.abi, res.address);
 
   if ((await demo.name()) === "Demo") {

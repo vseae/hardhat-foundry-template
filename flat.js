@@ -34,7 +34,7 @@ async function flattenSolFiles(directory) {
           console.error(`❌ Error flattening ${filePath}: ${error}`); // Output error message for flattening with emoji
         }
       }
-    })
+    }),
   );
 }
 
