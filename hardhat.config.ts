@@ -22,14 +22,7 @@ import "hardhat-contract-sizer";
 dotenv.config();
 const { NODE_URL, INFURA_KEY, MNEMONIC, ETHERSCAN_API_KEY } = process.env;
 const PK = process.env.PK?.split(",");
-// default network hardhat node
-const argv = yargs
-  .option("network", {
-    type: "string",
-    default: "hardhat",
-  })
-  .help(false)
-  .version(false).argv;
+
 const userNetworkConfig: HttpNetworkUserConfig = {};
 // set wallets
 if (PK) {
@@ -43,18 +36,6 @@ if (PK) {
     "please set your PK or MNEMONIC in a .env file or as an environment variable.",
   );
 }
-// if network is mainnet or sepolia, check for infura key
-(async () => {
-  const resolvedArgv = await argv;
-  if (
-    ["mainnet", "sepolia"].includes(resolvedArgv.network) &&
-    INFURA_KEY === undefined
-  ) {
-    throw new Error(
-      `Could not find Infura key in env, unable to connect to network ${resolvedArgv.network}`,
-    );
-  }
-})();
 
 // hardhat config
 const config: HardhatUserConfig = {
@@ -85,11 +66,6 @@ const config: HardhatUserConfig = {
       ...userNetworkConfig,
       chainId: 1,
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
-    },
-    goerli: {
-      ...userNetworkConfig,
-      chainId: 5,
-      url: `https://goerli.infura.io/v3/${INFURA_KEY}`,
     },
     sepolia: {
       ...userNetworkConfig,
