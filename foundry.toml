@@ -15,6 +15,7 @@ extra_output = ["storageLayout"]
 [fmt]
 # formatter config
 line_width = 100
+ignore = ["node_modules", "lib"]
 
 [fuzz]
 runs = 256
