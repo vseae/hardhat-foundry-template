@@ -4819,6 +4819,11 @@ snake-case@^3.0.4:
     dot-case "^3.0.4"
     tslib "^2.0.3"
 
+solady@^0.0.172:
+  version "0.0.172"
+  resolved "https://registry.npmjs.org/solady/-/solady-0.0.172.tgz#aea9071c1ba41d805c74c9423201173b8d05246c"
+  integrity sha512-8YkQr78PuaGKb1jWQzVgLcCtAOYXc6Xczh/wB6YUEZO/ioidzbGYoFSmYCA1nN0Ln+K9+NZSqDhyuyv/q4N8XQ==
+
 solc@0.7.3:
   version "0.7.3"
   resolved "https://registry.npmjs.org/solc/-/solc-0.7.3.tgz#04646961bd867a744f63d2b4e3c0701ffdc7d78a"
@@ -4871,6 +4876,11 @@ solidity-comments-extractor@^0.0.8:
   version "0.0.8"
   resolved "https://registry.npmjs.org/solidity-comments-extractor/-/solidity-comments-extractor-0.0.8.tgz#f6e148ab0c49f30c1abcbecb8b8df01ed8e879f8"
   integrity sha512-htM7Vn6LhHreR+EglVMd2s+sZhcXAirB1Zlyrv5zBuTxieCvjfnRpd7iZk75m/u6NOlEyQ94C6TWbBn2cY7w8g==
+
+solmate@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npmjs.org/solmate/-/solmate-6.2.0.tgz#edd29b5f3d6faafafdcf65fe4d1d959b4841cfa8"
+  integrity sha512-AM38ioQ2P8zRsA42zenb9or6OybRjOLXIu3lhIT8rhddUuduCt76pUEuLxOIg9GByGojGz+EbpFdCB6B+QZVVA==
 
 source-map-support@^0.5.13:
   version "0.5.21"
