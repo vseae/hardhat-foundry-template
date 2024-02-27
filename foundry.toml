@@ -8,7 +8,6 @@ test = 'test/foundry'
 solc_version = "0.8.24"
 optimizer = true
 optimizer_runs = 1000
-build_info = true
 gas_limit = 1_000_000_000
 extra_output = ["storageLayout"]
 
