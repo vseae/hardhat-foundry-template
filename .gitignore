@@ -13,6 +13,7 @@ storageLayout
 # Ignores development broadcast logs
 broadcast
 deployments
+example
 # Docs
 docs/
 

@@ -19,10 +19,13 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   const demo = await ethers.getContractAt(DemoArtifact.abi, res.address);
 
-  if ((await demo.name()) === "Demo") {
-    console.log("Demo contract already initialized:", await demo.getAddress());
+  if ((await demo.name()) === "DEMO") {
+    console.log(
+      "DemoUpgradeable contract already initialized:",
+      await demo.getAddress(),
+    );
   } else {
-    const tx = await demo.initialize("Demo", "DEMO");
+    const tx = await demo.initialize("DEMO", "DE");
     await tx.wait();
   }
 };

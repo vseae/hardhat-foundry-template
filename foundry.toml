@@ -11,6 +11,7 @@ optimizer_runs = 1000
 
 gas_limit = 1_000_000_000
 extra_output = ["storageLayout"]
+ffi = true
 
 [fmt]
 # formatter config
@@ -19,9 +20,14 @@ ignore = ["node_modules", "lib"]
 
 [fuzz]
 runs = 256
+seed = "0x7777"
 
 [invariant]
 runs = 30
 depth = 15
 fail_on_revert = true
 dictionary_weight = 80
+
+[rpc_endpoints]
+
+[etherscan]
