@@ -36,10 +36,12 @@ if (PK) {
   userNetworkConfig.accounts = PK;
 } else if (MNEMONIC) {
   userNetworkConfig.accounts = {
-    mnemonic: MNEMONIC ,
+    mnemonic: MNEMONIC,
   };
 } else {
-  throw new Error('please set your PK or MNEMONIC in a .env file or as an environment variable.');
+  throw new Error(
+    "please set your PK or MNEMONIC in a .env file or as an environment variable.",
+  );
 }
 // if network is mainnet or sepolia, check for infura key
 (async () => {
@@ -49,7 +51,7 @@ if (PK) {
     INFURA_KEY === undefined
   ) {
     throw new Error(
-      `Could not find Infura key in env, unable to connect to network ${resolvedArgv.network}`
+      `Could not find Infura key in env, unable to connect to network ${resolvedArgv.network}`,
     );
   }
 })();
@@ -146,9 +148,9 @@ const config: HardhatUserConfig = {
     runOnCompile: false,
     strict: true,
   },
-  gasReporter:{
-   enabled: true,
-  }
+  gasReporter: {
+    enabled: true,
+  },
 };
 if (NODE_URL) {
   config.networks!.custom = {
