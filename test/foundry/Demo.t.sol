@@ -13,6 +13,7 @@ contract DemoTest is Test {
 
     function testvSetValue() public {
         demo.setValue(2023);
+        console2.logUint(demo.getValue());
         assertEq(demo.getValue(), 2023);
     }
 
